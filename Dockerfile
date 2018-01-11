@@ -1,8 +1,10 @@
 FROM python:2
 
 WORKDIR /usr/src/app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-COPY example1.py .
+COPY example2.py .
 
-CMD [ "python", "example1.py" ]
+CMD [ "python", "example2.py" ]
 

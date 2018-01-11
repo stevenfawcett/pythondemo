@@ -1,0 +1,2 @@
+# Pip Modules required by this project
+flask
